@@ -11,7 +11,7 @@
 <div>
 	<div><h1>학생목록</h1></div>
 	<div>
-		<c:forEach items="${students }" var="student">
+		<c:forEach items="${students }" var="student"> 
 			${student.id } :
 			${student.name } :
 			${student.address } :
