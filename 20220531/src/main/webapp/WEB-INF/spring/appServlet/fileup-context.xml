@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 작업 중 이미지가 있어야 하는데 없으면 오류가 난다. 그럼 헷갈리니까 헷갈리지 않게 리얼패스를 잡아둔다. 작업이 끝나면 지워도 된다 -->
+	<!-- 파일 저장소를 만들었다 -->
+	<bean class="java.lang.String" id="saveDir">
+		<constructor-arg value="C:\temp"/>
+	</bean>
+
+</beans>
