@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>시작</h1>
-<a href="studentList.do">회원목록</a><p>
-<a href="studentLoginForm.do">로그인</a> 
-<!-- form이 있어야 값을 받아올 수 있다 -->
+<div align="center">
+	<div><h1>${message }</h1></div>
+	<a href="studentLoginForm.do">로그인</a>
+</div>
 </body>
 </html>
