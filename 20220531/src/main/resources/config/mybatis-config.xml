@@ -3,5 +3,8 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
   <configuration>
-  
+  	<settings>
+  		<setting name="jdbcTypeForNull" value="NULL"/> 
+  		<!-- Null값이 넘어오면 NULL로 값을 저장해라! NULL값을 인식하도록 하는 구문.. NULL값을 인식하지 못하면 오류가 생긴다 -->
+  	</settings>
   </configuration>
