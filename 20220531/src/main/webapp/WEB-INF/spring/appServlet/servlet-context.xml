@@ -21,6 +21,17 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+	<!-- tiles Resolve 설정 -->
+	<beans:bean class="org.springframework.web.servlet.view.UrlBasedViewResolver" id="urlBasedViewResolver">
+	<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
+	<beans:property name="order" value="1"/>
+	</beans:bean>
+	
+	<beans:bean class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+	<beans:property name="definitions" value="/WEB-INF/spring/tiles.xml"/>
+	</beans:bean>
+	
+	
 	<!-- file upload Resolve -->
 	<beans:bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver">
 		<beans:property name="defaultEncoding" value="utf-8"/>
